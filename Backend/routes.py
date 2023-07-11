@@ -2,8 +2,7 @@ from flask_cors import CORS
 from models import *
 from flask import Flask, request, jsonify, render_template, redirect, url_for, flash, session
 
-app = Flask(__name__)
-CORS(app, origins="http//localhost:3000") 
+CORS(app, origins="http://localhost:3000") 
 
 @app.route('/users', methods=['POST'])
 def createUser():
